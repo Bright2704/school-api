@@ -20,6 +20,7 @@ public class StudentController {
         return studentService.getStudent();
     }
 
+
     @PostMapping
     public void registerNewStudent(@RequestBody Student student){
         System.out.println(student);

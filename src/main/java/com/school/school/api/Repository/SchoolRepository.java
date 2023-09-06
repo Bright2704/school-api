@@ -12,4 +12,5 @@ import java.util.Optional;
 public interface SchoolRepository extends JpaRepository<School, Long> {
     @Query("SELECT s FROM School s where s.id= :id")
     Optional<School> findSchoolsById(@Param("id") Long id);
+
 }
